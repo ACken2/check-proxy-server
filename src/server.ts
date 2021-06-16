@@ -17,9 +17,6 @@ const port = 8080;
  * @param res Response object
  */
 function ping(req: express.Request, res: express.Response) {
-    console.log('ip', req.socket.remoteAddress);
-    console.log('headers', req.headers);
-    console.log('cookies', req.cookies);
     res.json(getProxyType(req.headers, req.query, req.body, req.cookies));
 }
 
