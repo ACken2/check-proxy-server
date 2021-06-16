@@ -1,0 +1,16 @@
+{
+    "name": "check-proxy-server",
+    "version": "0.0.1",
+    "description": "Server side implementation for the check-proxy npm package",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "proxy",
+        "testing",
+        "server"
+    ],
+    "author": "Ken Sze <acken2@outlook.com>",
+    "license": "Apache-2.0"
+}
