@@ -12,5 +12,11 @@
         "server"
     ],
     "author": "Ken Sze <acken2@outlook.com>",
-    "license": "Apache-2.0"
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@types/node": "^15.12.2",
+        "ts-node": "^10.0.0",
+        "tslib": "^2.3.0",
+        "typescript": "^4.3.2"
+    }
 }
