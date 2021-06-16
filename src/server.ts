@@ -3,6 +3,7 @@
 
 // Import dependencies
 import express from 'express';
+import publicIp from 'public-ip';
 import cookieParser from 'cookie-parser';
 import { urlencoded, json } from 'body-parser';
 import { ping as getProxyType } from 'check-proxy';
@@ -33,5 +34,7 @@ app.get('/', ping);
 app.post('/', ping);
 // Start server
 app.listen(port, function() {
-    console.log(`Check-proxy server started on port ${port}`);
+    publicIp.v4().then((externalIP) => {
+        console.log(`Check-proxy server started on ${externalIP}:${port}`);
+    });
 });
