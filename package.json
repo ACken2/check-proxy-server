@@ -1,6 +1,6 @@
 {
     "name": "check-proxy-server",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Server side implementation for the check-proxy npm package",
     "main": "src/server.ts",
     "scripts": {
@@ -8,8 +8,8 @@
         "test": "mocha -r ts-node/register 'test/**/*.ts' --timeout 600000 --exit"
     },
     "keywords": [
-        "proxy",
-        "testing",
+        "check-proxy",
+        "proxy testing",
         "server"
     ],
     "author": "Ken Sze <acken2@outlook.com>",
