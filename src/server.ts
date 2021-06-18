@@ -3,13 +3,15 @@
 
 // Import dependencies
 import express from 'express';
+import parseArgs from 'minimist';
 import publicIp from 'public-ip';
 import cookieParser from 'cookie-parser';
 import { urlencoded, json } from 'body-parser';
 import { ping as getProxyType } from 'check-proxy';
 
 // Port to listen on
-const port = 8080;
+const argv: { _: Array<any> } = parseArgs(process.argv.slice(2));
+const port: number = argv._[0] || 8080;
 
 /**
  * Handler for GET and POST request to the server.
